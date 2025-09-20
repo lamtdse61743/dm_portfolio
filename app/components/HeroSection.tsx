@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 export default function HeroSection() {
 	const [selectedStack, setSelectedStack] = useState<'frontend' | 'backend' | 'devops' | null>(null);
 	const [activeSection, setActiveSection] = useState('hero');
+	const [zoomedImage, setZoomedImage] = useState<string | null>(null);
 
 	// Helper function to get the correct image path for GitHub Pages
 	const getImagePath = (imagePath: string) => {
@@ -87,6 +88,12 @@ export default function HeroSection() {
 	}, []);
 
 	return (
+		<>
+		{zoomedImage && (
+			<div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm" onClick={() => setZoomedImage(null)}>
+				<img src={zoomedImage} alt="Zoomed" className="max-w-full max-h-full rounded-lg shadow-2xl border-4 border-white" style={{ cursor: 'zoom-out' }} />
+			</div>
+		)}
 		<section className="min-h-screen relative overflow-hidden py-24 md:py-0">
 			<div className="absolute inset-0">
 				<div
@@ -732,7 +739,6 @@ export default function HeroSection() {
 								</div>
 							</div>
 						</motion.div>
-						{/* Leadership & Team Management */}
 						<motion.div
 							initial={{ opacity: 0, x: 20 }}
 							animate={{ opacity: 1, x: 0 }}
@@ -764,6 +770,31 @@ export default function HeroSection() {
 												<span>Delivered exceptional service by managing high-value VIP orders and maintaining long-term client relationships</span>
 											</li>
 										</ul>
+									</div>
+
+									{/* Team Images Grid */}
+									<div className="mt-6">
+										<h6 className="text-md font-semibold text-purple-400 mb-3 text-center">Our Team in Action</h6>
+										<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+											<img src={getImagePath('/team1.JPG')} alt="Team Member 1" className="rounded-lg border border-gray-700 object-cover w-full h-40 md:h-48 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/team1.JPG'))} />
+											<img src={getImagePath('/team2.JPG')} alt="Team Member 2" className="rounded-lg border border-gray-700 object-cover w-full h-40 md:h-48 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/team2.JPG'))} />
+											<img src={getImagePath('/team3.JPG')} alt="Team Member 3" className="rounded-lg border border-gray-700 object-cover w-full h-40 md:h-48 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/team3.JPG'))} />
+											<img src={getImagePath('/team4.jpg')} alt="Team Member 4" className="rounded-lg border border-gray-700 object-cover w-full h-40 md:h-48 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/team4.jpg'))} />
+										</div>
+										<p className="text-xs text-gray-400 text-center mt-2">Snapshots from team activities, content creation, and campaign execution.</p>
+									</div>
+
+									{/* Product Gallery */}
+									<div className="mt-8">
+										<h6 className="text-md font-semibold text-teal-400 mb-3 text-center">Product Gallery</h6>
+										<div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+											<img src={getImagePath('/product1.jpg')} alt="Product 1" className="rounded-lg border border-gray-700 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/product1.jpg'))} />
+											<img src={getImagePath('/product2.jpg')} alt="Product 2" className="rounded-lg border border-gray-700 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/product2.jpg'))} />
+											<img src={getImagePath('/product3.jpg')} alt="Product 3" className="rounded-lg border border-gray-700 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/product3.jpg'))} />
+											<img src={getImagePath('/product4.jpg')} alt="Product 4" className="rounded-lg border border-gray-700 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/product4.jpg'))} />
+											<img src={getImagePath('/product5.jpg')} alt="Product 5" className="rounded-lg border border-gray-700 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/product5.jpg'))} />
+										</div>
+										<p className="text-xs text-gray-400 text-center mt-2">A selection of featured products from our retail business.</p>
 									</div>
 								</div>
 							</div>
@@ -984,5 +1015,6 @@ export default function HeroSection() {
 				</motion.div>
 			</div>
 		</section>
+		</>
 	);
 }
