@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 6rem; /* Account for fixed navigation */
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #000;
+}
+
+/* Enhanced smooth scrolling for better performance */
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
