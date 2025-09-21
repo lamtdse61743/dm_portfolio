@@ -395,6 +395,10 @@ img, video {
   display: none;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -496,6 +500,10 @@ img, video {
   margin-top: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+
 .block {
   display: block;
 }
@@ -526,6 +534,10 @@ img, video {
 
 .h-12 {
   height: 3rem;
+}
+
+.h-32 {
+  height: 8rem;
 }
 
 .h-4 {
@@ -560,10 +572,6 @@ img, video {
   height: 100%;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
 .max-h-\[32rem\] {
   max-height: 32rem;
 }
@@ -576,12 +584,20 @@ img, video {
   max-height: 100%;
 }
 
+.max-h-\[28rem\] {
+  max-height: 28rem;
+}
+
 .min-h-\[20rem\] {
   min-height: 20rem;
 }
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[16rem\] {
+  min-height: 16rem;
 }
 
 .w-1\.5 {
@@ -636,12 +652,16 @@ img, video {
   max-width: 72rem;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
 
-.max-w-full {
-  max-width: 100%;
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .flex-1 {
@@ -799,6 +819,11 @@ img, video {
   border-width: 4px;
 }
 
+.border-blue-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(96 165 250 / var(--tw-border-opacity, 1));
+}
+
 .border-blue-500 {
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
@@ -853,13 +878,18 @@ img, video {
   border-color: #0000;
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
 .border-yellow-500\/30 {
   border-color: #eab3084d;
 }
 
-.border-white {
+.border-yellow-400 {
   --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+  border-color: rgb(250 204 21 / var(--tw-border-opacity, 1));
 }
 
 .bg-black {
@@ -951,6 +981,10 @@ img, video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-yellow-100\/10 {
+  background-color: #fef9c31a;
 }
 
 .bg-gradient-to-b {
@@ -1470,12 +1504,20 @@ body {
     margin-top: 4rem;
   }
 
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .md\:h-10 {
     height: 2.5rem;
   }
 
   .md\:h-16 {
     height: 4rem;
+  }
+
+  .md\:h-40 {
+    height: 10rem;
   }
 
   .md\:h-48 {
@@ -1492,10 +1534,6 @@ body {
 
   .md\:h-8 {
     height: 2rem;
-  }
-
-  .md\:h-40 {
-    height: 10rem;
   }
 
   .md\:w-10 {

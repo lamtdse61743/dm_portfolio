@@ -180,7 +180,7 @@ export default function HeroSection() {
 							Get in Touch
 						</a>
 						<a
-							href="https://drive.google.com/file/d/12nHCDdA3yIBtXnBmUSEzRSJgUZyx6zdv/view?usp=sharing"
+							href="https://drive.google.com/file/d/19XfZ1G-_deqwBAZ8F7R-hVbDDHj25KLb/view?usp=sharing"
 							target="_blank"
 							className="px-8 py-3 bg-black border border-gray-800 rounded-lg font-medium hover:bg-gray-900 transition-colors inline-flex items-center justify-center gap-2"
 						>
@@ -199,13 +199,13 @@ export default function HeroSection() {
 					{/* Social Links */}
 					<div className="flex justify-center gap-6 mb-6">
 						<a
-							href="https://github.com/lamtdse61743"
+							href="https://www.facebook.com/lam.inh.238271/"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"
 						>
 							<svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-								<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+								<path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/>
 							</svg>
 						</a>
 						<a
@@ -607,11 +607,7 @@ export default function HeroSection() {
 														/>
 													</div>
 													<p className="text-xs text-gray-400 mt-2 leading-relaxed">
-														<strong className="text-teal-400">Conversion Path Intelligence:</strong> This analysis reveals the customer journey from initial 
-														impression to meaningful conversation. By tracking and optimizing each stage of the funnel, I identified 
-														<strong className="text-teal-300">friction points</strong> and implemented targeted improvements. The data shows how 
-														<strong className="text-teal-300">landing page optimization</strong>, creative-message alignment, and strategic call-to-action placement 
-														increased conversion rates, ultimately generating <strong className="text-teal-300">12,064 quality conversations</strong> from my reach efforts.
+														This chart shows the campaigns ranked by conversion funnel efficiency. A few stood out with significantly higher conversion rates, while others lagged behind. The insight suggests prioritizing top-performing funnels and refining weaker ones.
 													</p>
 												</div>
 
@@ -626,11 +622,7 @@ export default function HeroSection() {
 														/>
 													</div>
 													<p className="text-xs text-gray-400 mt-2 leading-relaxed">
-														<strong className="text-yellow-400">Investment Strategy Excellence:</strong> This spend analysis demonstrates my sophisticated budget management 
-														across my <strong className="text-yellow-300">$33K CAD total investment</strong>. Rather than equal distribution, I employed 
-														<strong className="text-yellow-300">performance-based scaling</strong> - allocating larger budgets to proven high-performers while 
-														maintaining smaller test budgets for experimental campaigns. This data-driven approach to budget allocation maximized overall 
-														portfolio ROI and ensured <strong className="text-yellow-300">optimal resource utilization</strong> across all 464+ campaigns.
+														This visualization illustrates how budget was distributed across campaigns. A larger share was directed toward proven high performers, while smaller amounts were used for testing new strategies. This approach balances stability with experimentation.
 													</p>
 												</div>
 
@@ -645,11 +637,7 @@ export default function HeroSection() {
 														/>
 													</div>
 													<p className="text-xs text-gray-400 mt-2 leading-relaxed">
-														<strong className="text-red-400">Learning from Underperformers:</strong> This critical analysis identifies campaigns with lower efficiency ratios, 
-														providing invaluable insights for <strong className="text-red-300">continuous optimization</strong>. Rather than simply pausing these campaigns, 
-														I analyzed common patterns - audience misalignment, creative fatigue, or seasonal factors - to inform 
-														<strong className="text-red-300">strategic pivots</strong>. This data-driven approach to identifying and addressing underperformance 
-														enabled me to <strong className="text-red-300">reallocate budgets</strong> and apply learnings to improve future campaign planning and execution.
+														This chart highlights the least efficient campaigns by conversions per cost. Several campaigns delivered lower returns compared to the rest of the portfolio. Identifying these underperformers helps guide reallocation of budget and creative adjustments.
 													</p>
 												</div>
 
@@ -664,11 +652,7 @@ export default function HeroSection() {
 														/>
 													</div>
 													<p className="text-xs text-gray-400 mt-2 leading-relaxed">
-														<strong className="text-indigo-400">Audience Engagement Intelligence:</strong> This sophisticated analysis maps the relationship between 
-														unique reach and total impressions, revealing crucial insights about <strong className="text-indigo-300">audience engagement patterns</strong> 
-														and optimal frequency strategies. The data helped me identify the sweet spot between reaching new audiences and 
-														<strong className="text-indigo-300">reinforcing my message</strong> to existing prospects. By optimizing this balance, I maximized 
-														both <strong className="text-indigo-300">brand awareness expansion</strong> and conversion likelihood while avoiding audience fatigue and wasted ad spend.
+														This scatter plot maps the relationship between unique reach and total impressions. Most campaigns clustered around lower reach, while a few extended significantly further. The analysis helps balance frequency with audience expansion.
 													</p>
 												</div>
 
@@ -682,25 +666,12 @@ export default function HeroSection() {
 													<img src={getImagePath('/campaigndemo2.jpg')} alt="Campaign Demo 2" className="rounded-lg border border-gray-700 object-contain w-full min-h-[20rem] max-h-[32rem] bg-black" />
 													<img src={getImagePath('/campaigndemo3.jpg')} alt="Campaign Demo 3" className="rounded-lg border border-gray-700 object-contain w-full min-h-[20rem] max-h-[32rem] bg-black" />
 												</div>
-												<p className="text-xs text-gray-400 text-center mt-2">Selected visuals from my paid social campaigns, demonstrating creative direction and ad execution.</p>
+												<p className="text-xs text-gray-400 text-center mt-2">This section presents a selection of ad creatives across different formats. Visual variety — including static posts and video assets — played a role in shaping engagement levels. Pairing creative examples with performance data shows how design influences results.</p>
 											</div>
 											{/* Summary Analytics */}
 											<div className="mt-4 bg-gray-800/30 rounded-lg p-4 border border-gray-700">
-												<h6 className="text-sm font-semibold text-blue-400 mb-3">Strategic Campaign Management Insights</h6>
-												<div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-gray-400">
-													<div>
-														<p><strong className="text-green-400">Data-Driven Optimization:</strong> Continuously analyzed campaign performance to identify top performers and scale successful strategies</p>
-													</div>
-													<div>
-														<p><strong className="text-purple-400">Budget Efficiency:</strong> Maintained cost-effective reach and conversion rates while maximizing campaign ROI</p>
-													</div>
-													<div>
-														<p><strong className="text-teal-400">Performance Benchmarking:</strong> Established clear KPIs and benchmarks to measure success and guide optimization decisions</p>
-													</div>
-													<div>
-														<p><strong className="text-yellow-400">Strategic Reallocation:</strong> Identified underperforming campaigns and redistributed budget to high-efficiency initiatives</p>
-													</div>
-												</div>
+												<h6 className="text-sm font-semibold text-blue-400 mb-3">Audience Engagement Intelligence</h6>
+												<p className="text-xs text-gray-400 text-center mt-2">This analysis explores how engagement patterns shift with reach and impressions. While higher frequency sometimes led to audience fatigue, balanced exposure maintained strong interactions. These insights inform future posting schedules and messaging strategies.</p>
 											</div>
 										</div>
 									</div>
@@ -736,6 +707,17 @@ export default function HeroSection() {
 										</div>
 									</div>
 									<p className="text-xs text-gray-400 text-center">Real influencer collaborations that contributed to campaign success and social proof for LDWatch.</p>
+
+									{/* Customer Feedback Gallery */}
+									<div className="mt-6">
+										<h6 className="text-md font-semibold text-yellow-400 mb-3 text-center">Customer Feedback Highlights</h6>
+										<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+											<img src={getImagePath('/feedback1.jpg')} alt="Customer Feedback 1" className="rounded-lg border border-gray-700 object-contain w-full min-h-[16rem] max-h-[28rem] bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/feedback1.jpg'))} />
+											<img src={getImagePath('/feedback2.jpg')} alt="Customer Feedback 2" className="rounded-lg border border-gray-700 object-contain w-full min-h-[16rem] max-h-[28rem] bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/feedback2.jpg'))} />
+											<img src={getImagePath('/feedback3.jpg')} alt="Customer Feedback 3" className="rounded-lg border border-gray-700 object-contain w-full min-h-[16rem] max-h-[28rem] bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/feedback3.jpg'))} />
+										</div>
+										<p className="text-xs text-yellow-400 text-center mt-2">These are real customer feedbacks, reflecting my commitment to exceptional service and the ability to convert digital marketing efforts into brand awareness and actual purchases.</p>
+									</div>
 								</div>
 							</div>
 						</motion.div>
@@ -796,6 +778,29 @@ export default function HeroSection() {
 										</div>
 										<p className="text-xs text-gray-400 text-center mt-2">A selection of featured products from our retail business.</p>
 									</div>
+
+									{/* Luxury Hublot Gallery */}
+									<div className="mt-8">
+										<h6 className="text-md font-semibold text-yellow-400 mb-3 text-center">Luxury Hublot Collection – VIP Customer</h6>
+										<div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+											{/* Left: 4 luxury images */}
+											<div className="grid grid-cols-2 gap-4">
+												<img src={getImagePath('/luxury1.jpg')} alt="Luxury Hublot 1" className="rounded-lg border-2 border-yellow-400 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury1.jpg'))} />
+												<img src={getImagePath('/luxury2.jpg')} alt="Luxury Hublot 2" className="rounded-lg border-2 border-yellow-400 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury2.jpg'))} />
+												<img src={getImagePath('/luxury3.jpg')} alt="Luxury Hublot 3" className="rounded-lg border-2 border-yellow-400 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury3.jpg'))} />
+												<img src={getImagePath('/luxury4.jpg')} alt="Luxury Hublot 4" className="rounded-lg border-2 border-yellow-400 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury4.jpg'))} />
+											</div>
+											{/* Right: Value highlight */}
+											<div className="flex flex-col items-center justify-center gap-4">
+												<img src={getImagePath('/luxury5.jpg')} alt="Reference Market Price" className="rounded-lg border-2 border-yellow-400 object-cover w-full max-w-xs h-32 md:h-48 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury5.jpg'))} />
+												<div className="bg-yellow-100/10 border border-yellow-400 rounded-lg p-4 text-center">
+													<p className="text-lg font-bold text-yellow-400 mb-2">Market Value Reference</p>
+													<p className="text-sm text-yellow-300">This showcase features a luxury Hublot watch in 18k gold, acquired by a VIP client at a premium price point. Referencing the market value underscores its positioning, while the sale highlights the effectiveness of my digital marketing campaigns in reaching and converting high-net-worth customers, reinforcing the brand’s appeal to premium audiences.</p>
+												</div>
+											</div>
+										</div>
+										{/* (Comment removed as requested) */}
+									</div>
 								</div>
 							</div>
 						</motion.div>
@@ -838,7 +843,19 @@ export default function HeroSection() {
 									<p className="text-sm md:text-base text-gray-400 mb-3">London, Ontario, Canada • 2024 - 2025</p>
 									<div className="text-sm md:text-base text-gray-300">
 										<p className="font-medium text-purple-400 mb-3">Coursework:</p>
-										<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+										<div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
+											{/* President's Honour Roll Certificate on the left */}
+											<div className="flex flex-col items-center md:items-start mt-0 md:mt-6">
+												<img
+													src={getImagePath('/presidenthonour.jpg')}
+													alt="President's Honour Roll Certificate"
+													className="rounded-lg border border-blue-400 shadow-lg max-w-xs w-full mb-2 cursor-zoom-in"
+													onClick={() => setZoomedImage(getImagePath('/presidenthonour.jpg'))}
+												/>
+												<p className="text-xs text-blue-400 text-center md:text-left">President's Honour Roll Certificate, Fanshawe College</p>
+												<p className="text-xs text-gray-400 text-center md:text-left mt-1">Awarded for achieving a GPA of 4.18/4.2 and outstanding academic performance in the Artificial Intelligence and Machine Learning program.</p>
+											</div>
+											{/* All Coursework/Skills on the right */}
 											<div>
 												<ul className="space-y-1 text-gray-400">
 													<li className="flex items-center gap-2">
@@ -853,10 +870,6 @@ export default function HeroSection() {
 														<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
 														Data Mining & Analysis
 													</li>
-												</ul>
-											</div>
-											<div>
-												<ul className="space-y-1 text-gray-400">
 													<li className="flex items-center gap-2">
 														<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
 														Data Visualization for Machine Learning
@@ -998,16 +1011,9 @@ export default function HeroSection() {
 
 								<div className="text-sm md:text-base text-gray-300">
 									<p className="font-medium text-purple-400 mb-3">Contributions:</p>
-									<ul className="space-y-2 text-gray-400">
-										<li className="flex items-start gap-2">
-											<div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
-											<span>Supported the development of <em>Winning the Battle for Secure ML</em>, an open-access textbook on securing machine learning systems across the ML lifecycle — including adversarial, poisoning, backdoor, and privacy threats.</span>
-										</li>
-										<li className="flex items-start gap-2">
-											<div className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
-											<span>Helped ensure balanced coverage of both theoretical foundations and hands-on mitigation techniques such as secure-by-design strategies and adversarial ML defenses.</span>
-										</li>
-									</ul>
+									<p className="text-gray-400 mb-2">
+										Helped create an open-access guide that makes machine learning more secure and trustworthy. The work covered common risks (such as hackers tricking models or data leaks) and shared practical ways to protect against them. I focused on turning complex technical topics into clear insights that students, researchers, and professionals can apply.
+									</p>
 								</div>
 							</div>
 						</div>
