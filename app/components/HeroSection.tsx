@@ -848,11 +848,11 @@ export default function HeroSection() {
 											<div className="flex flex-col items-center md:items-start mt-0 md:mt-6">
 												<img
 													src={getImagePath('/presidenthonour.jpg')}
-													alt="President's Honour Roll Certificate"
+													alt="President&apos;s Honour Roll Certificate"
 													className="rounded-lg border border-blue-400 shadow-lg max-w-xs w-full mb-2 cursor-zoom-in"
 													onClick={() => setZoomedImage(getImagePath('/presidenthonour.jpg'))}
 												/>
-												<p className="text-xs text-blue-400 text-center md:text-left">President's Honour Roll Certificate, Fanshawe College</p>
+												<p className="text-xs text-blue-400 text-center md:text-left">President&apos;s Honour Roll Certificate, Fanshawe College</p>
 												<p className="text-xs text-gray-400 text-center md:text-left mt-1">Awarded for achieving a GPA of 4.18/4.2 and outstanding academic performance in the Artificial Intelligence and Machine Learning program.</p>
 											</div>
 											{/* All Coursework/Skills on the right */}

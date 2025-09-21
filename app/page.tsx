@@ -1,7 +1,6 @@
 'use client';
 
 import HeroSection from './components/HeroSection';
-import ProjectsSection from './components/ProjectsSection';
 import CertificationsSection from './components/CertificationsSection';
 import ContactSection from './components/ContactSection';
 
