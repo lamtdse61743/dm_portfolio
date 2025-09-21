@@ -818,15 +818,10 @@ export default function HeroSection() {
 							<div className="flex items-start gap-4">
 								{/* Canadian Flag */}
 								<div className="flex-shrink-0 mt-1">
-									<svg className="w-8 h-6 md:w-10 md:h-8" viewBox="0 0 36 24">
-										<rect width="36" height="24" fill="#FF0000" />
-										<rect x="12" y="0" width="12" height="24" fill="#FFFFFF" />
-										<path d="M18 4l2 4h-1l-1-2-1 2h-1l2-4zm0 12l-2 4h1l1-2 1 2h1l-2-4z" fill="#FF0000" />
-										<path d="M16 12l2-2 2 2-2 2-2-2z" fill="#FF0000" />
-									</svg>
+									<img src={getImagePath('/canada.svg')} alt="Canadian Flag" className="w-8 h-6 md:w-10 md:h-8 object-contain" />
 								</div>
 								<div className="flex-1">
-									<h4 className="text-lg md:text-xl font-bold text-blue-400 mb-1">Fanshawe College</h4>
+									<h4 className="text-lg md:text-xl font-bold text-blue-400 mb-1">Fanshawe College Canada</h4>
 									<p className="text-base md:text-lg font-semibold text-white mb-2">Post-Graduate Certificate in Artificial Intelligence and Machine Learning</p>
 									<p className="text-sm md:text-base text-gray-400 mb-3">London, Ontario, Canada • 2024 - 2025</p>
 									<div className="text-sm md:text-base text-gray-300">
