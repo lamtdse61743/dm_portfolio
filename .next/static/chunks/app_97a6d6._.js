@@ -21,18 +21,8 @@ function HeroSection() {
     const [selectedStack, setSelectedStack] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [activeSection, setActiveSection] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('hero');
     const [zoomedImage, setZoomedImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    // Helper function to get the correct image path for GitHub Pages
-    const getImagePath = (imagePath)=>{
-        // For GitHub Pages deployment, we need to add the repository name as basePath
-        // We can detect if we're in production by checking the current location
-        if ("TURBOPACK compile-time truthy", 1) {
-            // Client-side: check if we're on GitHub Pages
-            const isGitHubPages = window.location.hostname === 'lamtdse61743.github.io';
-            return isGitHubPages ? `/Portfolio${imagePath}` : imagePath;
-        } else {
-            "TURBOPACK unreachable";
-        }
-    };
+    // Helper function for image paths (Vercel: use as-is)
+    const getImagePath = (imagePath)=>imagePath;
     // Smooth scroll function with enhanced smoothness
     const scrollToSection = (sectionId)=>{
         const element = document.getElementById(sectionId);
@@ -116,12 +106,12 @@ function HeroSection() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/app/components/HeroSection.tsx",
-                    lineNumber: 94,
+                    lineNumber: 82,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/HeroSection.tsx",
-                lineNumber: 93,
+                lineNumber: 81,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -136,12 +126,12 @@ function HeroSection() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/app/components/HeroSection.tsx",
-                            lineNumber: 99,
+                            lineNumber: 87,
                             columnNumber: 5
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 98,
+                        lineNumber: 86,
                         columnNumber: 4
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].nav, {
@@ -195,7 +185,7 @@ function HeroSection() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                            lineNumber: 129,
+                                            lineNumber: 117,
                                             columnNumber: 9
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -203,23 +193,23 @@ function HeroSection() {
                                             children: item.label
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 124,
                                             columnNumber: 8
                                         }, this)
                                     ]
                                 }, item.id, true, {
                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 108,
                                     columnNumber: 7
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/components/HeroSection.tsx",
-                            lineNumber: 112,
+                            lineNumber: 100,
                             columnNumber: 5
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 106,
+                        lineNumber: 94,
                         columnNumber: 4
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -258,17 +248,17 @@ function HeroSection() {
                                                 className: "w-full h-full object-cover rounded-full bg-gray-900"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 152,
+                                                lineNumber: 140,
                                                 columnNumber: 8
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                            lineNumber: 151,
+                                            lineNumber: 139,
                                             columnNumber: 7
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 145,
+                                        lineNumber: 133,
                                         columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -279,7 +269,7 @@ function HeroSection() {
                                                 children: "Lam Dinh Trinh"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 161,
+                                                lineNumber: 149,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -287,7 +277,7 @@ function HeroSection() {
                                                 children: "Marketing Specialist & AI Engineer"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 164,
+                                                lineNumber: 152,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -295,13 +285,13 @@ function HeroSection() {
                                                 children: "I bridge the gap between IT innovation and business operations, applying AI-driven strategies to marketing campaigns, customer engagement, and data analytics. Experienced in scaling retail businesses and optimizing digital performance through intelligent automation."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 165,
+                                                lineNumber: 153,
                                                 columnNumber: 7
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 160,
+                                        lineNumber: 148,
                                         columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -320,27 +310,27 @@ function HeroSection() {
                                                                 d: "M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 177,
+                                                                lineNumber: 165,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                                 d: "M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 178,
+                                                                lineNumber: 166,
                                                                 columnNumber: 9
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 176,
+                                                        lineNumber: 164,
                                                         columnNumber: 8
                                                     }, this),
                                                     "Get in Touch"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 172,
+                                                lineNumber: 160,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -359,7 +349,7 @@ function HeroSection() {
                                                                 clipRule: "evenodd"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 188,
+                                                                lineNumber: 176,
                                                                 columnNumber: 9
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -368,26 +358,26 @@ function HeroSection() {
                                                                 clipRule: "evenodd"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 193,
+                                                                lineNumber: 181,
                                                                 columnNumber: 9
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 187,
+                                                        lineNumber: 175,
                                                         columnNumber: 8
                                                     }, this),
                                                     "View Resume"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 182,
+                                                lineNumber: 170,
                                                 columnNumber: 7
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 171,
+                                        lineNumber: 159,
                                         columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -406,17 +396,17 @@ function HeroSection() {
                                                         d: "M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 208,
+                                                        lineNumber: 196,
                                                         columnNumber: 9
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 207,
+                                                    lineNumber: 195,
                                                     columnNumber: 8
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 201,
+                                                lineNumber: 189,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -432,23 +422,23 @@ function HeroSection() {
                                                         d: "M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 218,
+                                                        lineNumber: 206,
                                                         columnNumber: 9
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 217,
+                                                    lineNumber: 205,
                                                     columnNumber: 8
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 211,
+                                                lineNumber: 199,
                                                 columnNumber: 7
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 200,
+                                        lineNumber: 188,
                                         columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -467,7 +457,7 @@ function HeroSection() {
                                                         d: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 226,
+                                                        lineNumber: 214,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -477,26 +467,26 @@ function HeroSection() {
                                                         d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 232,
+                                                        lineNumber: 220,
                                                         columnNumber: 8
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 225,
+                                                lineNumber: 213,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: "London, Ontario, Canada"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 234,
+                                                lineNumber: 222,
                                                 columnNumber: 7
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 224,
+                                        lineNumber: 212,
                                         columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -510,7 +500,7 @@ function HeroSection() {
                                                         children: "Meta Ads Manager"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 239,
+                                                        lineNumber: 227,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -518,7 +508,7 @@ function HeroSection() {
                                                         children: "Google Ads"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 240,
+                                                        lineNumber: 228,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -526,7 +516,7 @@ function HeroSection() {
                                                         children: "TikTok Ads"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 241,
+                                                        lineNumber: 229,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -534,7 +524,7 @@ function HeroSection() {
                                                         children: "SEO/SEM"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 242,
+                                                        lineNumber: 230,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -542,7 +532,7 @@ function HeroSection() {
                                                         children: "Python"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 243,
+                                                        lineNumber: 231,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -550,7 +540,7 @@ function HeroSection() {
                                                         children: "JavaScript"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 244,
+                                                        lineNumber: 232,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -558,13 +548,13 @@ function HeroSection() {
                                                         children: "HTML"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 245,
+                                                        lineNumber: 233,
                                                         columnNumber: 8
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 238,
+                                                lineNumber: 226,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -575,7 +565,7 @@ function HeroSection() {
                                                         children: "RESTful API"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 248,
+                                                        lineNumber: 236,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -583,7 +573,7 @@ function HeroSection() {
                                                         children: "Node.js"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 249,
+                                                        lineNumber: 237,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -591,7 +581,7 @@ function HeroSection() {
                                                         children: "Next.js"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 250,
+                                                        lineNumber: 238,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -599,7 +589,7 @@ function HeroSection() {
                                                         children: "OpenAI"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 251,
+                                                        lineNumber: 239,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -607,7 +597,7 @@ function HeroSection() {
                                                         children: "GitHub Copilot"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 252,
+                                                        lineNumber: 240,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -615,7 +605,7 @@ function HeroSection() {
                                                         children: "Google Analytics"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 253,
+                                                        lineNumber: 241,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -623,7 +613,7 @@ function HeroSection() {
                                                         children: "Entrepreneurship"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 254,
+                                                        lineNumber: 242,
                                                         columnNumber: 8
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -631,25 +621,25 @@ function HeroSection() {
                                                         children: "Team Leadership"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 255,
+                                                        lineNumber: 243,
                                                         columnNumber: 8
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 247,
+                                                lineNumber: 235,
                                                 columnNumber: 7
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 237,
+                                        lineNumber: 225,
                                         columnNumber: 6
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                lineNumber: 143,
+                                lineNumber: 131,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -679,7 +669,7 @@ function HeroSection() {
                                                         children: "Digital Marketing & Campaign Management"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 277,
+                                                        lineNumber: 265,
                                                         columnNumber: 9
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -692,10 +682,61 @@ function HeroSection() {
                                                                         className: "w-1.5 h-1.5 bg-purple-500 rounded-full"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 280,
+                                                                        lineNumber: 268,
                                                                         columnNumber: 11
                                                                     }, this),
                                                                     "Meta Ads Manager, Google Ads, TikTok Ads"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/components/HeroSection.tsx",
+                                                                lineNumber: 267,
+                                                                columnNumber: 10
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                className: "flex items-center gap-2",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "w-1.5 h-1.5 bg-purple-500 rounded-full"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/components/HeroSection.tsx",
+                                                                        lineNumber: 272,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    "SEO/SEM Optimization & Content Creation"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/components/HeroSection.tsx",
+                                                                lineNumber: 271,
+                                                                columnNumber: 10
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                className: "flex items-center gap-2",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "w-1.5 h-1.5 bg-purple-500 rounded-full"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/components/HeroSection.tsx",
+                                                                        lineNumber: 276,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    "Campaign Performance Analytics & ROI Analysis"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/components/HeroSection.tsx",
+                                                                lineNumber: 275,
+                                                                columnNumber: 10
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                className: "flex items-center gap-2",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "w-1.5 h-1.5 bg-purple-500 rounded-full"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/components/HeroSection.tsx",
+                                                                        lineNumber: 280,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    "Social Media Strategy & Customer Engagement"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
@@ -712,74 +753,23 @@ function HeroSection() {
                                                                         lineNumber: 284,
                                                                         columnNumber: 11
                                                                     }, this),
-                                                                    "SEO/SEM Optimization & Content Creation"
+                                                                    "A/B Testing & Conversion Optimization"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
                                                                 lineNumber: 283,
                                                                 columnNumber: 10
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                className: "flex items-center gap-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "w-1.5 h-1.5 bg-purple-500 rounded-full"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 288,
-                                                                        columnNumber: 11
-                                                                    }, this),
-                                                                    "Campaign Performance Analytics & ROI Analysis"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 287,
-                                                                columnNumber: 10
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                className: "flex items-center gap-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "w-1.5 h-1.5 bg-purple-500 rounded-full"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 292,
-                                                                        columnNumber: 11
-                                                                    }, this),
-                                                                    "Social Media Strategy & Customer Engagement"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 291,
-                                                                columnNumber: 10
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                className: "flex items-center gap-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "w-1.5 h-1.5 bg-purple-500 rounded-full"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 296,
-                                                                        columnNumber: 11
-                                                                    }, this),
-                                                                    "A/B Testing & Conversion Optimization"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 295,
-                                                                columnNumber: 10
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 278,
+                                                        lineNumber: 266,
                                                         columnNumber: 9
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 271,
+                                                lineNumber: 259,
                                                 columnNumber: 8
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -792,7 +782,7 @@ function HeroSection() {
                                                         children: "Business Intelligence & Data Analytics"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 309,
+                                                        lineNumber: 297,
                                                         columnNumber: 9
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -805,10 +795,61 @@ function HeroSection() {
                                                                         className: "w-1.5 h-1.5 bg-blue-500 rounded-full"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 313,
+                                                                        lineNumber: 301,
                                                                         columnNumber: 11
                                                                     }, this),
                                                                     "Python for Data Processing & Campaign Analysis"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/components/HeroSection.tsx",
+                                                                lineNumber: 300,
+                                                                columnNumber: 10
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                className: "flex items-center gap-2",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "w-1.5 h-1.5 bg-blue-500 rounded-full"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/components/HeroSection.tsx",
+                                                                        lineNumber: 305,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    "Google Analytics & Performance Tracking"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/components/HeroSection.tsx",
+                                                                lineNumber: 304,
+                                                                columnNumber: 10
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                className: "flex items-center gap-2",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "w-1.5 h-1.5 bg-blue-500 rounded-full"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/components/HeroSection.tsx",
+                                                                        lineNumber: 309,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    "Customer Data Segmentation & Behavior Analysis"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/components/HeroSection.tsx",
+                                                                lineNumber: 308,
+                                                                columnNumber: 10
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                className: "flex items-center gap-2",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "w-1.5 h-1.5 bg-blue-500 rounded-full"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/components/HeroSection.tsx",
+                                                                        lineNumber: 313,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    "Business Dashboard Development"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
@@ -825,74 +866,23 @@ function HeroSection() {
                                                                         lineNumber: 317,
                                                                         columnNumber: 11
                                                                     }, this),
-                                                                    "Google Analytics & Performance Tracking"
+                                                                    "Marketing Attribution & Revenue Analytics"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
                                                                 lineNumber: 316,
                                                                 columnNumber: 10
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                className: "flex items-center gap-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "w-1.5 h-1.5 bg-blue-500 rounded-full"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 321,
-                                                                        columnNumber: 11
-                                                                    }, this),
-                                                                    "Customer Data Segmentation & Behavior Analysis"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 320,
-                                                                columnNumber: 10
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                className: "flex items-center gap-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "w-1.5 h-1.5 bg-blue-500 rounded-full"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 325,
-                                                                        columnNumber: 11
-                                                                    }, this),
-                                                                    "Business Dashboard Development"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 324,
-                                                                columnNumber: 10
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                className: "flex items-center gap-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "w-1.5 h-1.5 bg-blue-500 rounded-full"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 329,
-                                                                        columnNumber: 11
-                                                                    }, this),
-                                                                    "Marketing Attribution & Revenue Analytics"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 328,
-                                                                columnNumber: 10
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 310,
+                                                        lineNumber: 298,
                                                         columnNumber: 9
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 303,
+                                                lineNumber: 291,
                                                 columnNumber: 8
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -905,7 +895,7 @@ function HeroSection() {
                                                         children: "AI Applications & Automation"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 343,
+                                                        lineNumber: 331,
                                                         columnNumber: 9
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -918,10 +908,61 @@ function HeroSection() {
                                                                         className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 346,
+                                                                        lineNumber: 334,
                                                                         columnNumber: 11
                                                                     }, this),
                                                                     "OpenAI APIs & ChatGPT Integration"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/components/HeroSection.tsx",
+                                                                lineNumber: 333,
+                                                                columnNumber: 10
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                className: "flex items-center gap-2",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/components/HeroSection.tsx",
+                                                                        lineNumber: 338,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    "Marketing Content Automation & AI-Generated Visuals"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/components/HeroSection.tsx",
+                                                                lineNumber: 337,
+                                                                columnNumber: 10
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                className: "flex items-center gap-2",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/components/HeroSection.tsx",
+                                                                        lineNumber: 342,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    "Customer Service Chatbots & Support Automation"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/components/HeroSection.tsx",
+                                                                lineNumber: 341,
+                                                                columnNumber: 10
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                className: "flex items-center gap-2",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/components/HeroSection.tsx",
+                                                                        lineNumber: 346,
+                                                                        columnNumber: 11
+                                                                    }, this),
+                                                                    "GitHub Copilot & AI-Assisted Development"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
@@ -938,90 +979,39 @@ function HeroSection() {
                                                                         lineNumber: 350,
                                                                         columnNumber: 11
                                                                     }, this),
-                                                                    "Marketing Content Automation & AI-Generated Visuals"
+                                                                    "Web Development (HTML, CSS, JavaScript, Next.js)"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
                                                                 lineNumber: 349,
                                                                 columnNumber: 10
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                className: "flex items-center gap-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 354,
-                                                                        columnNumber: 11
-                                                                    }, this),
-                                                                    "Customer Service Chatbots & Support Automation"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 353,
-                                                                columnNumber: 10
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                className: "flex items-center gap-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 358,
-                                                                        columnNumber: 11
-                                                                    }, this),
-                                                                    "GitHub Copilot & AI-Assisted Development"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 357,
-                                                                columnNumber: 10
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                className: "flex items-center gap-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 362,
-                                                                        columnNumber: 11
-                                                                    }, this),
-                                                                    "Web Development (HTML, CSS, JavaScript, Next.js)"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 361,
-                                                                columnNumber: 10
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 344,
+                                                        lineNumber: 332,
                                                         columnNumber: 9
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 337,
+                                                lineNumber: 325,
                                                 columnNumber: 8
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 268,
+                                        lineNumber: 256,
                                         columnNumber: 7
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                    lineNumber: 262,
+                                    lineNumber: 250,
                                     columnNumber: 6
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                lineNumber: 261,
+                                lineNumber: 249,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1044,7 +1034,7 @@ function HeroSection() {
                                         children: "Professional Experience"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 379,
+                                        lineNumber: 367,
                                         columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1055,7 +1045,7 @@ function HeroSection() {
                                                 children: "Founder & Entrepreneur"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 385,
+                                                lineNumber: 373,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1063,7 +1053,7 @@ function HeroSection() {
                                                 children: "August 2019 – Present"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 386,
+                                                lineNumber: 374,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1071,13 +1061,13 @@ function HeroSection() {
                                                 children: "LDWatch - Watch Retail Business, Vietnam"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 387,
+                                                lineNumber: 375,
                                                 columnNumber: 7
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 384,
+                                        lineNumber: 372,
                                         columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1113,22 +1103,22 @@ function HeroSection() {
                                                                         clipRule: "evenodd"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 403,
+                                                                        lineNumber: 391,
                                                                         columnNumber: 12
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 402,
+                                                                    lineNumber: 390,
                                                                     columnNumber: 11
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 401,
+                                                                lineNumber: 389,
                                                                 columnNumber: 10
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 400,
+                                                            lineNumber: 388,
                                                             columnNumber: 9
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1139,7 +1129,7 @@ function HeroSection() {
                                                                     children: "Business Management & Negotiation"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 408,
+                                                                    lineNumber: 396,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1154,20 +1144,20 @@ function HeroSection() {
                                                                                         className: "w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 412,
+                                                                                        lineNumber: 400,
                                                                                         columnNumber: 13
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                         children: "Founded and scaled a retail business, overseeing operations from supplier contracts to customer delivery"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 413,
+                                                                                        lineNumber: 401,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                lineNumber: 411,
+                                                                                lineNumber: 399,
                                                                                 columnNumber: 12
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1177,7 +1167,7 @@ function HeroSection() {
                                                                                         className: "w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 416,
+                                                                                        lineNumber: 404,
                                                                                         columnNumber: 13
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1188,20 +1178,20 @@ function HeroSection() {
                                                                                                 children: "Casio headquarters"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 417,
+                                                                                                lineNumber: 405,
                                                                                                 columnNumber: 63
                                                                                             }, this),
                                                                                             " and Shenzhen watch brands"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 417,
+                                                                                        lineNumber: 405,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                lineNumber: 415,
+                                                                                lineNumber: 403,
                                                                                 columnNumber: 12
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1211,31 +1201,31 @@ function HeroSection() {
                                                                                         className: "w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 420,
+                                                                                        lineNumber: 408,
                                                                                         columnNumber: 13
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                         children: "Secured favorable pricing and supply terms to maximize profitability"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 421,
+                                                                                        lineNumber: 409,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                lineNumber: 419,
+                                                                                lineNumber: 407,
                                                                                 columnNumber: 12
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 410,
+                                                                        lineNumber: 398,
                                                                         columnNumber: 11
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 409,
+                                                                    lineNumber: 397,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1247,7 +1237,7 @@ function HeroSection() {
                                                                             className: "w-full max-w-md rounded-lg border border-gray-700 shadow-lg mb-2"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 427,
+                                                                            lineNumber: 415,
                                                                             columnNumber: 14
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1255,30 +1245,30 @@ function HeroSection() {
                                                                             children: "Attending the CronusArt Collaboration Exhibition in Shenzhen, representing LDWatch in partnership with a leading Chinese watch brand."
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 432,
+                                                                            lineNumber: 420,
                                                                             columnNumber: 14
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 426,
+                                                                    lineNumber: 414,
                                                                     columnNumber: 13
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 407,
+                                                            lineNumber: 395,
                                                             columnNumber: 9
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 399,
+                                                    lineNumber: 387,
                                                     columnNumber: 8
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 393,
+                                                lineNumber: 381,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1309,22 +1299,22 @@ function HeroSection() {
                                                                         d: "M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 449,
+                                                                        lineNumber: 437,
                                                                         columnNumber: 12
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 448,
+                                                                    lineNumber: 436,
                                                                     columnNumber: 11
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 447,
+                                                                lineNumber: 435,
                                                                 columnNumber: 10
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 446,
+                                                            lineNumber: 434,
                                                             columnNumber: 9
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1335,7 +1325,7 @@ function HeroSection() {
                                                                     children: "AI & Marketing Innovation"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 454,
+                                                                    lineNumber: 442,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1350,20 +1340,20 @@ function HeroSection() {
                                                                                         className: "w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 458,
+                                                                                        lineNumber: 446,
                                                                                         columnNumber: 13
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                         children: "Applied AI expertise to automate content creation (product descriptions, promotional posts) and deploy chatbots for customer support"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 459,
+                                                                                        lineNumber: 447,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                lineNumber: 457,
+                                                                                lineNumber: 445,
                                                                                 columnNumber: 12
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1373,20 +1363,20 @@ function HeroSection() {
                                                                                         className: "w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 462,
+                                                                                        lineNumber: 450,
                                                                                         columnNumber: 13
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                         children: "Leveraged generative AI to customize product visuals (color variations) based on customer preferences, offering broader choices and enhancing personalization"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 463,
+                                                                                        lineNumber: 451,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                lineNumber: 461,
+                                                                                lineNumber: 449,
                                                                                 columnNumber: 12
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1396,7 +1386,7 @@ function HeroSection() {
                                                                                         className: "w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 466,
+                                                                                        lineNumber: 454,
                                                                                         columnNumber: 13
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1407,48 +1397,48 @@ function HeroSection() {
                                                                                                 children: "sales by 35%"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 467,
+                                                                                                lineNumber: 455,
                                                                                                 columnNumber: 111
                                                                                             }, this),
                                                                                             " in the first year"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 467,
+                                                                                        lineNumber: 455,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                lineNumber: 465,
+                                                                                lineNumber: 453,
                                                                                 columnNumber: 12
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 456,
+                                                                        lineNumber: 444,
                                                                         columnNumber: 11
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 455,
+                                                                    lineNumber: 443,
                                                                     columnNumber: 10
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 453,
+                                                            lineNumber: 441,
                                                             columnNumber: 9
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 445,
+                                                    lineNumber: 433,
                                                     columnNumber: 8
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 439,
+                                                lineNumber: 427,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1481,22 +1471,22 @@ function HeroSection() {
                                                                         clipRule: "evenodd"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 486,
+                                                                        lineNumber: 474,
                                                                         columnNumber: 12
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 485,
+                                                                    lineNumber: 473,
                                                                     columnNumber: 11
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 484,
+                                                                lineNumber: 472,
                                                                 columnNumber: 10
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 483,
+                                                            lineNumber: 471,
                                                             columnNumber: 9
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1507,7 +1497,7 @@ function HeroSection() {
                                                                     children: "Website Development & SEO"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 491,
+                                                                    lineNumber: 479,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1522,20 +1512,20 @@ function HeroSection() {
                                                                                         className: "w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 495,
+                                                                                        lineNumber: 483,
                                                                                         columnNumber: 13
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                         children: "Designed, developed, and maintained the LDWatch retail website as a product showcase"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 496,
+                                                                                        lineNumber: 484,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                lineNumber: 494,
+                                                                                lineNumber: 482,
                                                                                 columnNumber: 12
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1545,20 +1535,20 @@ function HeroSection() {
                                                                                         className: "w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 499,
+                                                                                        lineNumber: 487,
                                                                                         columnNumber: 13
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                         children: "Applied strong knowledge of HTML and CSS to build optimized landing pages for promotions and new product releases"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 500,
+                                                                                        lineNumber: 488,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                lineNumber: 498,
+                                                                                lineNumber: 486,
                                                                                 columnNumber: 12
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1568,7 +1558,7 @@ function HeroSection() {
                                                                                         className: "w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 503,
+                                                                                        lineNumber: 491,
                                                                                         columnNumber: 13
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1579,7 +1569,7 @@ function HeroSection() {
                                                                                                 children: "organic traffic by 60%"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 504,
+                                                                                                lineNumber: 492,
                                                                                                 columnNumber: 121
                                                                                             }, this),
                                                                                             " and reducing ",
@@ -1588,47 +1578,47 @@ function HeroSection() {
                                                                                                 children: "bounce rate by 25%"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 504,
+                                                                                                lineNumber: 492,
                                                                                                 columnNumber: 200
                                                                                             }, this)
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 504,
+                                                                                        lineNumber: 492,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                lineNumber: 502,
+                                                                                lineNumber: 490,
                                                                                 columnNumber: 12
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 493,
+                                                                        lineNumber: 481,
                                                                         columnNumber: 11
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 492,
+                                                                    lineNumber: 480,
                                                                     columnNumber: 10
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 490,
+                                                            lineNumber: 478,
                                                             columnNumber: 9
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 482,
+                                                    lineNumber: 470,
                                                     columnNumber: 8
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 476,
+                                                lineNumber: 464,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1659,22 +1649,22 @@ function HeroSection() {
                                                                         d: "M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 523,
+                                                                        lineNumber: 511,
                                                                         columnNumber: 12
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 522,
+                                                                    lineNumber: 510,
                                                                     columnNumber: 11
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 521,
+                                                                lineNumber: 509,
                                                                 columnNumber: 10
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 520,
+                                                            lineNumber: 508,
                                                             columnNumber: 9
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1685,7 +1675,7 @@ function HeroSection() {
                                                                     children: "Marketing Campaign Analytics"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 528,
+                                                                    lineNumber: 516,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1701,7 +1691,7 @@ function HeroSection() {
                                                                                             className: "w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 532,
+                                                                                            lineNumber: 520,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1712,7 +1702,7 @@ function HeroSection() {
                                                                                                     children: "464+ paid social campaigns"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 533,
+                                                                                                    lineNumber: 521,
                                                                                                     columnNumber: 41
                                                                                                 }, this),
                                                                                                 " across Facebook/Instagram with total spend of ",
@@ -1721,8 +1711,144 @@ function HeroSection() {
                                                                                                     children: "$33K CAD"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 533,
+                                                                                                    lineNumber: 521,
                                                                                                     columnNumber: 157
+                                                                                                }, this)
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                            lineNumber: 521,
+                                                                                            columnNumber: 13
+                                                                                        }, this)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                    lineNumber: 519,
+                                                                                    columnNumber: 12
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                    className: "flex items-start gap-2",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                            className: "w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                            lineNumber: 524,
+                                                                                            columnNumber: 13
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                            children: [
+                                                                                                "Generated ",
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                                    className: "text-blue-400",
+                                                                                                    children: "12,064 conversations"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                    lineNumber: 525,
+                                                                                                    columnNumber: 29
+                                                                                                }, this),
+                                                                                                " and ",
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                                    className: "text-blue-400",
+                                                                                                    children: "10,543 new contacts"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                    lineNumber: 525,
+                                                                                                    columnNumber: 97
+                                                                                                }, this),
+                                                                                                " over ~3.1 years"
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                            lineNumber: 525,
+                                                                                            columnNumber: 13
+                                                                                        }, this)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                    lineNumber: 523,
+                                                                                    columnNumber: 12
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                    className: "flex items-start gap-2",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                            className: "w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                            lineNumber: 528,
+                                                                                            columnNumber: 13
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                            children: [
+                                                                                                "Delivered an overall average of ",
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                                    className: "text-blue-400",
+                                                                                                    children: "~316 reach per CAD"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                    lineNumber: 529,
+                                                                                                    columnNumber: 51
+                                                                                                }, this),
+                                                                                                ", ",
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                                    className: "text-blue-400",
+                                                                                                    children: "~0.37 conversations per CAD"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                    lineNumber: 529,
+                                                                                                    columnNumber: 114
+                                                                                                }, this),
+                                                                                                " and ",
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                                    className: "text-blue-400",
+                                                                                                    children: "~0.32 contacts per CAD"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                    lineNumber: 529,
+                                                                                                    columnNumber: 189
+                                                                                                }, this)
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                            lineNumber: 529,
+                                                                                            columnNumber: 13
+                                                                                        }, this)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                    lineNumber: 527,
+                                                                                    columnNumber: 12
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                    className: "flex items-start gap-2",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                            className: "w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                            lineNumber: 532,
+                                                                                            columnNumber: 13
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                            children: [
+                                                                                                "Top campaigns achieved up to ",
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                                    className: "text-blue-400",
+                                                                                                    children: "3,328 reach per CAD"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                    lineNumber: 533,
+                                                                                                    columnNumber: 48
+                                                                                                }, this),
+                                                                                                " and ",
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                                    className: "text-blue-400",
+                                                                                                    children: "2.48 conversations per CAD"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                    lineNumber: 533,
+                                                                                                    columnNumber: 115
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
@@ -1735,147 +1861,11 @@ function HeroSection() {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
                                                                                     lineNumber: 531,
                                                                                     columnNumber: 12
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                    className: "flex items-start gap-2",
-                                                                                    children: [
-                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                            className: "w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"
-                                                                                        }, void 0, false, {
-                                                                                            fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 536,
-                                                                                            columnNumber: 13
-                                                                                        }, this),
-                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                            children: [
-                                                                                                "Generated ",
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                                    className: "text-blue-400",
-                                                                                                    children: "12,064 conversations"
-                                                                                                }, void 0, false, {
-                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 537,
-                                                                                                    columnNumber: 29
-                                                                                                }, this),
-                                                                                                " and ",
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                                    className: "text-blue-400",
-                                                                                                    children: "10,543 new contacts"
-                                                                                                }, void 0, false, {
-                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 537,
-                                                                                                    columnNumber: 97
-                                                                                                }, this),
-                                                                                                " over ~3.1 years"
-                                                                                            ]
-                                                                                        }, void 0, true, {
-                                                                                            fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 537,
-                                                                                            columnNumber: 13
-                                                                                        }, this)
-                                                                                    ]
-                                                                                }, void 0, true, {
-                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 535,
-                                                                                    columnNumber: 12
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                    className: "flex items-start gap-2",
-                                                                                    children: [
-                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                            className: "w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"
-                                                                                        }, void 0, false, {
-                                                                                            fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 540,
-                                                                                            columnNumber: 13
-                                                                                        }, this),
-                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                            children: [
-                                                                                                "Delivered an overall average of ",
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                                    className: "text-blue-400",
-                                                                                                    children: "~316 reach per CAD"
-                                                                                                }, void 0, false, {
-                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 541,
-                                                                                                    columnNumber: 51
-                                                                                                }, this),
-                                                                                                ", ",
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                                    className: "text-blue-400",
-                                                                                                    children: "~0.37 conversations per CAD"
-                                                                                                }, void 0, false, {
-                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 541,
-                                                                                                    columnNumber: 114
-                                                                                                }, this),
-                                                                                                " and ",
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                                    className: "text-blue-400",
-                                                                                                    children: "~0.32 contacts per CAD"
-                                                                                                }, void 0, false, {
-                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 541,
-                                                                                                    columnNumber: 189
-                                                                                                }, this)
-                                                                                            ]
-                                                                                        }, void 0, true, {
-                                                                                            fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 541,
-                                                                                            columnNumber: 13
-                                                                                        }, this)
-                                                                                    ]
-                                                                                }, void 0, true, {
-                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 539,
-                                                                                    columnNumber: 12
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                    className: "flex items-start gap-2",
-                                                                                    children: [
-                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                            className: "w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"
-                                                                                        }, void 0, false, {
-                                                                                            fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 544,
-                                                                                            columnNumber: 13
-                                                                                        }, this),
-                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                            children: [
-                                                                                                "Top campaigns achieved up to ",
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                                    className: "text-blue-400",
-                                                                                                    children: "3,328 reach per CAD"
-                                                                                                }, void 0, false, {
-                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 545,
-                                                                                                    columnNumber: 48
-                                                                                                }, this),
-                                                                                                " and ",
-                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                                                    className: "text-blue-400",
-                                                                                                    children: "2.48 conversations per CAD"
-                                                                                                }, void 0, false, {
-                                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 545,
-                                                                                                    columnNumber: 115
-                                                                                                }, this)
-                                                                                            ]
-                                                                                        }, void 0, true, {
-                                                                                            fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 545,
-                                                                                            columnNumber: 13
-                                                                                        }, this)
-                                                                                    ]
-                                                                                }, void 0, true, {
-                                                                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 543,
-                                                                                    columnNumber: 12
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 530,
+                                                                            lineNumber: 518,
                                                                             columnNumber: 11
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1890,7 +1880,7 @@ function HeroSection() {
                                                                                             className: "w-full h-auto object-cover"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 552,
+                                                                                            lineNumber: 540,
                                                                                             columnNumber: 15
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1898,13 +1888,13 @@ function HeroSection() {
                                                                                             children: "Overview of my real campaign performance dashboard, visualizing key metrics and results from 464+ paid social campaigns."
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 557,
+                                                                                            lineNumber: 545,
                                                                                             columnNumber: 15
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 551,
+                                                                                    lineNumber: 539,
                                                                                     columnNumber: 14
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
@@ -1912,7 +1902,7 @@ function HeroSection() {
                                                                                     children: "Campaign Performance Analytics Dashboard"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 559,
+                                                                                    lineNumber: 547,
                                                                                     columnNumber: 14
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1926,7 +1916,7 @@ function HeroSection() {
                                                                                                     children: "Top 15 Most Efficient Campaigns"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 565,
+                                                                                                    lineNumber: 553,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1937,12 +1927,12 @@ function HeroSection() {
                                                                                                         className: "w-full h-auto object-cover border border-gray-600"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 567,
+                                                                                                        lineNumber: 555,
                                                                                                         columnNumber: 15
                                                                                                     }, this)
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 566,
+                                                                                                    lineNumber: 554,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1953,7 +1943,7 @@ function HeroSection() {
                                                                                                             children: "Performance Excellence:"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                            lineNumber: 574,
+                                                                                                            lineNumber: 562,
                                                                                                             columnNumber: 15
                                                                                                         }, this),
                                                                                                         " This analysis reveals my top-tier campaigns that consistently delivered exceptional value. These campaigns represent the ",
@@ -1962,7 +1952,7 @@ function HeroSection() {
                                                                                                             children: "gold standard"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                            lineNumber: 575,
+                                                                                                            lineNumber: 563,
                                                                                                             columnNumber: 45
                                                                                                         }, this),
                                                                                                         " of my portfolio, showing how my strategic targeting, creative optimization, and budget allocation converged to create campaigns achieving ",
@@ -1971,7 +1961,7 @@ function HeroSection() {
                                                                                                             children: "2.48 conversations per CAD"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                            lineNumber: 576,
+                                                                                                            lineNumber: 564,
                                                                                                             columnNumber: 100
                                                                                                         }, this),
                                                                                                         "and ",
@@ -1980,20 +1970,20 @@ function HeroSection() {
                                                                                                             children: "3,328 reach per CAD"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                            lineNumber: 577,
+                                                                                                            lineNumber: 565,
                                                                                                             columnNumber: 19
                                                                                                         }, this),
                                                                                                         " - significantly outperforming industry benchmarks."
                                                                                                     ]
                                                                                                 }, void 0, true, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 573,
+                                                                                                    lineNumber: 561,
                                                                                                     columnNumber: 14
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 564,
+                                                                                            lineNumber: 552,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2004,7 +1994,7 @@ function HeroSection() {
                                                                                                     children: "Top 10 Campaign Reach Efficiency"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 583,
+                                                                                                    lineNumber: 571,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2015,12 +2005,12 @@ function HeroSection() {
                                                                                                         className: "w-full h-auto object-cover border border-gray-600"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 585,
+                                                                                                        lineNumber: 573,
                                                                                                         columnNumber: 15
                                                                                                     }, this)
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 584,
+                                                                                                    lineNumber: 572,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2031,7 +2021,7 @@ function HeroSection() {
                                                                                                             children: "Reach Optimization Mastery:"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                            lineNumber: 592,
+                                                                                                            lineNumber: 580,
                                                                                                             columnNumber: 15
                                                                                                         }, this),
                                                                                                         " This chart demonstrates my systematic approach to maximizing audience reach while maintaining cost efficiency. Through ",
@@ -2040,7 +2030,7 @@ function HeroSection() {
                                                                                                             children: "A/B testing creative formats"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                            lineNumber: 593,
+                                                                                                            lineNumber: 581,
                                                                                                             columnNumber: 58
                                                                                                         }, this),
                                                                                                         ", refining audience targeting parameters, and optimizing bid strategies, I achieved remarkable reach efficiency. The data shows how my strategic campaign structure and ",
@@ -2049,20 +2039,20 @@ function HeroSection() {
                                                                                                             children: "precise audience segmentation"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                            lineNumber: 595,
+                                                                                                            lineNumber: 583,
                                                                                                             columnNumber: 19
                                                                                                         }, this),
                                                                                                         " enabled me to reach more potential customers per dollar spent than traditional broad-targeting approaches."
                                                                                                     ]
                                                                                                 }, void 0, true, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 591,
+                                                                                                    lineNumber: 579,
                                                                                                     columnNumber: 14
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 582,
+                                                                                            lineNumber: 570,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2073,7 +2063,7 @@ function HeroSection() {
                                                                                                     children: "Conversion Funnel Efficiency"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 601,
+                                                                                                    lineNumber: 589,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2084,12 +2074,12 @@ function HeroSection() {
                                                                                                         className: "w-full h-auto object-cover border border-gray-600"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 603,
+                                                                                                        lineNumber: 591,
                                                                                                         columnNumber: 15
                                                                                                     }, this)
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 602,
+                                                                                                    lineNumber: 590,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2097,13 +2087,13 @@ function HeroSection() {
                                                                                                     children: "This chart shows the campaigns ranked by conversion funnel efficiency. A few stood out with significantly higher conversion rates, while others lagged behind. The insight suggests prioritizing top-performing funnels and refining weaker ones."
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 609,
+                                                                                                    lineNumber: 597,
                                                                                                     columnNumber: 14
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 600,
+                                                                                            lineNumber: 588,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2114,7 +2104,7 @@ function HeroSection() {
                                                                                                     children: "Strategic Budget Allocation"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 616,
+                                                                                                    lineNumber: 604,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2125,12 +2115,12 @@ function HeroSection() {
                                                                                                         className: "w-full h-auto object-cover border border-gray-600"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 618,
+                                                                                                        lineNumber: 606,
                                                                                                         columnNumber: 15
                                                                                                     }, this)
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 617,
+                                                                                                    lineNumber: 605,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2138,13 +2128,13 @@ function HeroSection() {
                                                                                                     children: "This visualization illustrates how budget was distributed across campaigns. A larger share was directed toward proven high performers, while smaller amounts were used for testing new strategies. This approach balances stability with experimentation."
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 624,
+                                                                                                    lineNumber: 612,
                                                                                                     columnNumber: 14
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 615,
+                                                                                            lineNumber: 603,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2155,7 +2145,7 @@ function HeroSection() {
                                                                                                     children: "Performance Optimization Insights"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 631,
+                                                                                                    lineNumber: 619,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2166,12 +2156,12 @@ function HeroSection() {
                                                                                                         className: "w-full h-auto object-cover border border-gray-600"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 633,
+                                                                                                        lineNumber: 621,
                                                                                                         columnNumber: 15
                                                                                                     }, this)
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 632,
+                                                                                                    lineNumber: 620,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2179,13 +2169,13 @@ function HeroSection() {
                                                                                                     children: "This chart highlights the least efficient campaigns by conversions per cost. Several campaigns delivered lower returns compared to the rest of the portfolio. Identifying these underperformers helps guide reallocation of budget and creative adjustments."
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 639,
+                                                                                                    lineNumber: 627,
                                                                                                     columnNumber: 14
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 630,
+                                                                                            lineNumber: 618,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2196,7 +2186,7 @@ function HeroSection() {
                                                                                                     children: "Audience Reach vs Impression Analysis"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 646,
+                                                                                                    lineNumber: 634,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2207,12 +2197,12 @@ function HeroSection() {
                                                                                                         className: "w-full h-auto object-cover border border-gray-600"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 648,
+                                                                                                        lineNumber: 636,
                                                                                                         columnNumber: 15
                                                                                                     }, this)
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 647,
+                                                                                                    lineNumber: 635,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2220,19 +2210,19 @@ function HeroSection() {
                                                                                                     children: "This scatter plot maps the relationship between unique reach and total impressions. Most campaigns clustered around lower reach, while a few extended significantly further. The analysis helps balance frequency with audience expansion."
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 654,
+                                                                                                    lineNumber: 642,
                                                                                                     columnNumber: 14
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 645,
+                                                                                            lineNumber: 633,
                                                                                             columnNumber: 13
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 561,
+                                                                                    lineNumber: 549,
                                                                                     columnNumber: 14
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2243,7 +2233,7 @@ function HeroSection() {
                                                                                             children: "Campaign Creatives & Demo Gallery"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 663,
+                                                                                            lineNumber: 651,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2255,7 +2245,7 @@ function HeroSection() {
                                                                                                     className: "rounded-lg border border-gray-700 object-contain w-full min-h-[20rem] max-h-[32rem] bg-black"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 665,
+                                                                                                    lineNumber: 653,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2264,7 +2254,7 @@ function HeroSection() {
                                                                                                     className: "rounded-lg border border-gray-700 object-contain w-full min-h-[20rem] max-h-[32rem] bg-black"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 666,
+                                                                                                    lineNumber: 654,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2273,13 +2263,13 @@ function HeroSection() {
                                                                                                     className: "rounded-lg border border-gray-700 object-contain w-full min-h-[20rem] max-h-[32rem] bg-black"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 667,
+                                                                                                    lineNumber: 655,
                                                                                                     columnNumber: 14
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 664,
+                                                                                            lineNumber: 652,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2287,13 +2277,13 @@ function HeroSection() {
                                                                                             children: "This section presents a selection of ad creatives across different formats. Visual variety — including static posts and video assets — played a role in shaping engagement levels. Pairing creative examples with performance data shows how design influences results."
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 669,
+                                                                                            lineNumber: 657,
                                                                                             columnNumber: 13
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 662,
+                                                                                    lineNumber: 650,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2304,7 +2294,7 @@ function HeroSection() {
                                                                                             children: "Audience Engagement Intelligence"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 673,
+                                                                                            lineNumber: 661,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2312,42 +2302,42 @@ function HeroSection() {
                                                                                             children: "This analysis explores how engagement patterns shift with reach and impressions. While higher frequency sometimes led to audience fatigue, balanced exposure maintained strong interactions. These insights inform future posting schedules and messaging strategies."
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 674,
+                                                                                            lineNumber: 662,
                                                                                             columnNumber: 13
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 672,
+                                                                                    lineNumber: 660,
                                                                                     columnNumber: 12
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 550,
+                                                                            lineNumber: 538,
                                                                             columnNumber: 13
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 529,
+                                                                    lineNumber: 517,
                                                                     columnNumber: 10
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 527,
+                                                            lineNumber: 515,
                                                             columnNumber: 9
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 519,
+                                                    lineNumber: 507,
                                                     columnNumber: 8
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 513,
+                                                lineNumber: 501,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2378,22 +2368,22 @@ function HeroSection() {
                                                                         d: "M10 2a8 8 0 100 16 8 8 0 000-16zm1 11.93V14a1 1 0 11-2 0v-1.07A6.002 6.002 0 014 10a6 6 0 1112 0 6.002 6.002 0 01-5 5.93z"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 693,
+                                                                        lineNumber: 681,
                                                                         columnNumber: 12
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 692,
+                                                                    lineNumber: 680,
                                                                     columnNumber: 11
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 691,
+                                                                lineNumber: 679,
                                                                 columnNumber: 10
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 690,
+                                                            lineNumber: 678,
                                                             columnNumber: 9
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2404,7 +2394,7 @@ function HeroSection() {
                                                                     children: "Influencer Collaborations & Feedback"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 698,
+                                                                    lineNumber: 686,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2419,7 +2409,7 @@ function HeroSection() {
                                                                                     className: "rounded-lg border border-gray-700 object-contain w-full min-h-[20rem] max-h-[32rem] bg-black mb-2"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 701,
+                                                                                    lineNumber: 689,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2427,13 +2417,13 @@ function HeroSection() {
                                                                                     children: "Influencer partnership: authentic product review and positive feedback, boosting campaign credibility."
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 702,
+                                                                                    lineNumber: 690,
                                                                                     columnNumber: 12
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 700,
+                                                                            lineNumber: 688,
                                                                             columnNumber: 11
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2445,7 +2435,7 @@ function HeroSection() {
                                                                                     className: "rounded-lg border border-gray-700 object-contain w-full min-h-[20rem] max-h-[32rem] bg-black mb-2"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 705,
+                                                                                    lineNumber: 693,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2453,19 +2443,19 @@ function HeroSection() {
                                                                                     children: "Collaboration with a key opinion leader, resulting in increased brand trust and audience engagement."
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 706,
+                                                                                    lineNumber: 694,
                                                                                     columnNumber: 12
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 704,
+                                                                            lineNumber: 692,
                                                                             columnNumber: 11
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 699,
+                                                                    lineNumber: 687,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2473,7 +2463,7 @@ function HeroSection() {
                                                                     children: "Real influencer collaborations that contributed to campaign success and social proof for LDWatch."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 709,
+                                                                    lineNumber: 697,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2484,7 +2474,7 @@ function HeroSection() {
                                                                             children: "Customer Feedback Highlights"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 713,
+                                                                            lineNumber: 701,
                                                                             columnNumber: 11
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2497,7 +2487,7 @@ function HeroSection() {
                                                                                     onClick: ()=>setZoomedImage(getImagePath('/feedback1.jpg'))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 715,
+                                                                                    lineNumber: 703,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2507,7 +2497,7 @@ function HeroSection() {
                                                                                     onClick: ()=>setZoomedImage(getImagePath('/feedback2.jpg'))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 716,
+                                                                                    lineNumber: 704,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2517,13 +2507,13 @@ function HeroSection() {
                                                                                     onClick: ()=>setZoomedImage(getImagePath('/feedback3.jpg'))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 717,
+                                                                                    lineNumber: 705,
                                                                                     columnNumber: 12
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 714,
+                                                                            lineNumber: 702,
                                                                             columnNumber: 11
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2531,30 +2521,30 @@ function HeroSection() {
                                                                             children: "These are real customer feedbacks, reflecting my commitment to exceptional service and the ability to convert digital marketing efforts into brand awareness and actual purchases."
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 719,
+                                                                            lineNumber: 707,
                                                                             columnNumber: 11
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 712,
+                                                                    lineNumber: 700,
                                                                     columnNumber: 10
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 697,
+                                                            lineNumber: 685,
                                                             columnNumber: 9
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 689,
+                                                    lineNumber: 677,
                                                     columnNumber: 8
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 683,
+                                                lineNumber: 671,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2585,22 +2575,22 @@ function HeroSection() {
                                                                         d: "M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 734,
+                                                                        lineNumber: 722,
                                                                         columnNumber: 12
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 733,
+                                                                    lineNumber: 721,
                                                                     columnNumber: 11
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 732,
+                                                                lineNumber: 720,
                                                                 columnNumber: 10
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 731,
+                                                            lineNumber: 719,
                                                             columnNumber: 9
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2611,7 +2601,7 @@ function HeroSection() {
                                                                     children: "Leadership & Team Management"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 739,
+                                                                    lineNumber: 727,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2626,7 +2616,7 @@ function HeroSection() {
                                                                                         className: "w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 743,
+                                                                                        lineNumber: 731,
                                                                                         columnNumber: 13
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2637,20 +2627,20 @@ function HeroSection() {
                                                                                                 children: "7-member team"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 744,
+                                                                                                lineNumber: 732,
                                                                                                 columnNumber: 42
                                                                                             }, this),
                                                                                             " responsible for social media content creation, including Facebook and TikTok posts, review videos, and short reels"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 744,
+                                                                                        lineNumber: 732,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                lineNumber: 742,
+                                                                                lineNumber: 730,
                                                                                 columnNumber: 12
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2660,20 +2650,20 @@ function HeroSection() {
                                                                                         className: "w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 747,
+                                                                                        lineNumber: 735,
                                                                                         columnNumber: 13
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                         children: "Directed outbound customer prospecting efforts and optimized engagement strategies to expand brand reach"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 748,
+                                                                                        lineNumber: 736,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                lineNumber: 746,
+                                                                                lineNumber: 734,
                                                                                 columnNumber: 12
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2683,31 +2673,31 @@ function HeroSection() {
                                                                                         className: "w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 751,
+                                                                                        lineNumber: 739,
                                                                                         columnNumber: 13
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                         children: "Delivered exceptional service by managing high-value VIP orders and maintaining long-term client relationships"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 752,
+                                                                                        lineNumber: 740,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                lineNumber: 750,
+                                                                                lineNumber: 738,
                                                                                 columnNumber: 12
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 741,
+                                                                        lineNumber: 729,
                                                                         columnNumber: 11
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 740,
+                                                                    lineNumber: 728,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2718,7 +2708,7 @@ function HeroSection() {
                                                                             children: "Our Team in Action"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 759,
+                                                                            lineNumber: 747,
                                                                             columnNumber: 11
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2731,7 +2721,7 @@ function HeroSection() {
                                                                                     onClick: ()=>setZoomedImage(getImagePath('/team1.JPG'))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 761,
+                                                                                    lineNumber: 749,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2741,7 +2731,7 @@ function HeroSection() {
                                                                                     onClick: ()=>setZoomedImage(getImagePath('/team2.JPG'))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 762,
+                                                                                    lineNumber: 750,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2751,7 +2741,7 @@ function HeroSection() {
                                                                                     onClick: ()=>setZoomedImage(getImagePath('/team3.JPG'))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 763,
+                                                                                    lineNumber: 751,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2761,13 +2751,13 @@ function HeroSection() {
                                                                                     onClick: ()=>setZoomedImage(getImagePath('/team4.jpg'))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 764,
+                                                                                    lineNumber: 752,
                                                                                     columnNumber: 12
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 760,
+                                                                            lineNumber: 748,
                                                                             columnNumber: 11
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2775,13 +2765,13 @@ function HeroSection() {
                                                                             children: "Snapshots from team activities, content creation, and campaign execution."
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 766,
+                                                                            lineNumber: 754,
                                                                             columnNumber: 11
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 758,
+                                                                    lineNumber: 746,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2792,7 +2782,7 @@ function HeroSection() {
                                                                             children: "Product Gallery"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 771,
+                                                                            lineNumber: 759,
                                                                             columnNumber: 11
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2805,7 +2795,7 @@ function HeroSection() {
                                                                                     onClick: ()=>setZoomedImage(getImagePath('/product1.jpg'))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 773,
+                                                                                    lineNumber: 761,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2815,7 +2805,7 @@ function HeroSection() {
                                                                                     onClick: ()=>setZoomedImage(getImagePath('/product2.jpg'))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 774,
+                                                                                    lineNumber: 762,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2825,7 +2815,7 @@ function HeroSection() {
                                                                                     onClick: ()=>setZoomedImage(getImagePath('/product3.jpg'))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 775,
+                                                                                    lineNumber: 763,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2835,7 +2825,7 @@ function HeroSection() {
                                                                                     onClick: ()=>setZoomedImage(getImagePath('/product4.jpg'))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 776,
+                                                                                    lineNumber: 764,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2845,13 +2835,13 @@ function HeroSection() {
                                                                                     onClick: ()=>setZoomedImage(getImagePath('/product5.jpg'))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 777,
+                                                                                    lineNumber: 765,
                                                                                     columnNumber: 12
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 772,
+                                                                            lineNumber: 760,
                                                                             columnNumber: 11
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2859,13 +2849,13 @@ function HeroSection() {
                                                                             children: "A selection of featured products from our retail business."
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 779,
+                                                                            lineNumber: 767,
                                                                             columnNumber: 11
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 770,
+                                                                    lineNumber: 758,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2876,7 +2866,7 @@ function HeroSection() {
                                                                             children: "Luxury Hublot Collection – VIP Customer"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 784,
+                                                                            lineNumber: 772,
                                                                             columnNumber: 11
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2892,7 +2882,7 @@ function HeroSection() {
                                                                                             onClick: ()=>setZoomedImage(getImagePath('/luxury1.jpg'))
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 788,
+                                                                                            lineNumber: 776,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2902,7 +2892,7 @@ function HeroSection() {
                                                                                             onClick: ()=>setZoomedImage(getImagePath('/luxury2.jpg'))
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 789,
+                                                                                            lineNumber: 777,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2912,7 +2902,7 @@ function HeroSection() {
                                                                                             onClick: ()=>setZoomedImage(getImagePath('/luxury3.jpg'))
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 790,
+                                                                                            lineNumber: 778,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2922,13 +2912,13 @@ function HeroSection() {
                                                                                             onClick: ()=>setZoomedImage(getImagePath('/luxury4.jpg'))
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 791,
+                                                                                            lineNumber: 779,
                                                                                             columnNumber: 13
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 787,
+                                                                                    lineNumber: 775,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2941,7 +2931,7 @@ function HeroSection() {
                                                                                             onClick: ()=>setZoomedImage(getImagePath('/luxury5.jpg'))
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 795,
+                                                                                            lineNumber: 783,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2952,7 +2942,7 @@ function HeroSection() {
                                                                                                     children: "Market Value Reference"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 797,
+                                                                                                    lineNumber: 785,
                                                                                                     columnNumber: 14
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2960,60 +2950,60 @@ function HeroSection() {
                                                                                                     children: "This showcase features a luxury Hublot watch in 18k gold, acquired by a VIP client at a premium price point. Referencing the market value underscores its positioning, while the sale highlights the effectiveness of my digital marketing campaigns in reaching and converting high-net-worth customers, reinforcing the brand’s appeal to premium audiences."
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                    lineNumber: 798,
+                                                                                                    lineNumber: 786,
                                                                                                     columnNumber: 14
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 796,
+                                                                                            lineNumber: 784,
                                                                                             columnNumber: 13
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 794,
+                                                                                    lineNumber: 782,
                                                                                     columnNumber: 12
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 785,
+                                                                            lineNumber: 773,
                                                                             columnNumber: 11
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 783,
+                                                                    lineNumber: 771,
                                                                     columnNumber: 10
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 738,
+                                                            lineNumber: 726,
                                                             columnNumber: 9
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 730,
+                                                    lineNumber: 718,
                                                     columnNumber: 8
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 724,
+                                                lineNumber: 712,
                                                 columnNumber: 7
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 390,
+                                        lineNumber: 378,
                                         columnNumber: 6
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                lineNumber: 372,
+                                lineNumber: 360,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3036,7 +3026,7 @@ function HeroSection() {
                                         children: "Education"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 818,
+                                        lineNumber: 806,
                                         columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3070,7 +3060,7 @@ function HeroSection() {
                                                                         fill: "#FF0000"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 834,
+                                                                        lineNumber: 822,
                                                                         columnNumber: 11
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -3081,7 +3071,7 @@ function HeroSection() {
                                                                         fill: "#FFFFFF"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 835,
+                                                                        lineNumber: 823,
                                                                         columnNumber: 11
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3089,7 +3079,7 @@ function HeroSection() {
                                                                         fill: "#FF0000"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 836,
+                                                                        lineNumber: 824,
                                                                         columnNumber: 11
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3097,18 +3087,18 @@ function HeroSection() {
                                                                         fill: "#FF0000"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 837,
+                                                                        lineNumber: 825,
                                                                         columnNumber: 11
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 833,
+                                                                lineNumber: 821,
                                                                 columnNumber: 10
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 832,
+                                                            lineNumber: 820,
                                                             columnNumber: 9
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3119,7 +3109,7 @@ function HeroSection() {
                                                                     children: "Fanshawe College"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 841,
+                                                                    lineNumber: 829,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3127,7 +3117,7 @@ function HeroSection() {
                                                                     children: "Post-Graduate Certificate in Artificial Intelligence and Machine Learning"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 842,
+                                                                    lineNumber: 830,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3135,7 +3125,7 @@ function HeroSection() {
                                                                     children: "London, Ontario, Canada • 2024 - 2025"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 843,
+                                                                    lineNumber: 831,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3146,7 +3136,7 @@ function HeroSection() {
                                                                             children: "Coursework:"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 845,
+                                                                            lineNumber: 833,
                                                                             columnNumber: 11
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3162,7 +3152,7 @@ function HeroSection() {
                                                                                             onClick: ()=>setZoomedImage(getImagePath('/presidenthonour.jpg'))
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 849,
+                                                                                            lineNumber: 837,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3170,7 +3160,7 @@ function HeroSection() {
                                                                                             children: "President's Honour Roll Certificate, Fanshawe College"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 855,
+                                                                                            lineNumber: 843,
                                                                                             columnNumber: 13
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3178,13 +3168,13 @@ function HeroSection() {
                                                                                             children: "Awarded for achieving a GPA of 4.18/4.2 and outstanding academic performance in the Artificial Intelligence and Machine Learning program."
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                            lineNumber: 856,
+                                                                                            lineNumber: 844,
                                                                                             columnNumber: 13
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 848,
+                                                                                    lineNumber: 836,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3198,10 +3188,61 @@ function HeroSection() {
                                                                                                         className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 862,
+                                                                                                        lineNumber: 850,
                                                                                                         columnNumber: 15
                                                                                                     }, this),
                                                                                                     "Deep Learning with TensorFlow/PyTorch"
+                                                                                                ]
+                                                                                            }, void 0, true, {
+                                                                                                fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                lineNumber: 849,
+                                                                                                columnNumber: 14
+                                                                                            }, this),
+                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                                className: "flex items-center gap-2",
+                                                                                                children: [
+                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                        className: "w-1.5 h-1.5 bg-blue-500 rounded-full"
+                                                                                                    }, void 0, false, {
+                                                                                                        fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                        lineNumber: 854,
+                                                                                                        columnNumber: 15
+                                                                                                    }, this),
+                                                                                                    "Data Science & Machine Learning"
+                                                                                                ]
+                                                                                            }, void 0, true, {
+                                                                                                fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                lineNumber: 853,
+                                                                                                columnNumber: 14
+                                                                                            }, this),
+                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                                className: "flex items-center gap-2",
+                                                                                                children: [
+                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                        className: "w-1.5 h-1.5 bg-purple-500 rounded-full"
+                                                                                                    }, void 0, false, {
+                                                                                                        fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                        lineNumber: 858,
+                                                                                                        columnNumber: 15
+                                                                                                    }, this),
+                                                                                                    "Data Mining & Analysis"
+                                                                                                ]
+                                                                                            }, void 0, true, {
+                                                                                                fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                lineNumber: 857,
+                                                                                                columnNumber: 14
+                                                                                            }, this),
+                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                                                className: "flex items-center gap-2",
+                                                                                                children: [
+                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                        className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
+                                                                                                    }, void 0, false, {
+                                                                                                        fileName: "[project]/app/components/HeroSection.tsx",
+                                                                                                        lineNumber: 862,
+                                                                                                        columnNumber: 15
+                                                                                                    }, this),
+                                                                                                    "Data Visualization for Machine Learning"
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
@@ -3218,7 +3259,7 @@ function HeroSection() {
                                                                                                         lineNumber: 866,
                                                                                                         columnNumber: 15
                                                                                                     }, this),
-                                                                                                    "Data Science & Machine Learning"
+                                                                                                    "Natural Language Processing"
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
@@ -3235,102 +3276,51 @@ function HeroSection() {
                                                                                                         lineNumber: 870,
                                                                                                         columnNumber: 15
                                                                                                     }, this),
-                                                                                                    "Data Mining & Analysis"
+                                                                                                    "Deep Learning with Tensorflow/Keras and Pytorch"
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
                                                                                                 lineNumber: 869,
                                                                                                 columnNumber: 14
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                                className: "flex items-center gap-2",
-                                                                                                children: [
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                        className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 874,
-                                                                                                        columnNumber: 15
-                                                                                                    }, this),
-                                                                                                    "Data Visualization for Machine Learning"
-                                                                                                ]
-                                                                                            }, void 0, true, {
-                                                                                                fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 873,
-                                                                                                columnNumber: 14
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                                className: "flex items-center gap-2",
-                                                                                                children: [
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                        className: "w-1.5 h-1.5 bg-blue-500 rounded-full"
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 878,
-                                                                                                        columnNumber: 15
-                                                                                                    }, this),
-                                                                                                    "Natural Language Processing"
-                                                                                                ]
-                                                                                            }, void 0, true, {
-                                                                                                fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 877,
-                                                                                                columnNumber: 14
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                                                className: "flex items-center gap-2",
-                                                                                                children: [
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                        className: "w-1.5 h-1.5 bg-purple-500 rounded-full"
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 882,
-                                                                                                        columnNumber: 15
-                                                                                                    }, this),
-                                                                                                    "Deep Learning with Tensorflow/Keras and Pytorch"
-                                                                                                ]
-                                                                                            }, void 0, true, {
-                                                                                                fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 881,
-                                                                                                columnNumber: 14
                                                                                             }, this)
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 860,
+                                                                                        lineNumber: 848,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 859,
+                                                                                    lineNumber: 847,
                                                                                     columnNumber: 12
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 846,
+                                                                            lineNumber: 834,
                                                                             columnNumber: 11
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 844,
+                                                                    lineNumber: 832,
                                                                     columnNumber: 10
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 840,
+                                                            lineNumber: 828,
                                                             columnNumber: 9
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 830,
+                                                    lineNumber: 818,
                                                     columnNumber: 8
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 824,
+                                                lineNumber: 812,
                                                 columnNumber: 7
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3361,7 +3351,7 @@ function HeroSection() {
                                                                         fill: "#DA020E"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 904,
+                                                                        lineNumber: 892,
                                                                         columnNumber: 11
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
@@ -3369,18 +3359,18 @@ function HeroSection() {
                                                                         fill: "#FFFF00"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                        lineNumber: 905,
+                                                                        lineNumber: 893,
                                                                         columnNumber: 11
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 903,
+                                                                lineNumber: 891,
                                                                 columnNumber: 10
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 902,
+                                                            lineNumber: 890,
                                                             columnNumber: 9
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3391,7 +3381,7 @@ function HeroSection() {
                                                                     children: "FPT University Vietnam"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 909,
+                                                                    lineNumber: 897,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3399,7 +3389,7 @@ function HeroSection() {
                                                                     children: "Bachelor of Software Engineering"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 910,
+                                                                    lineNumber: 898,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3407,7 +3397,7 @@ function HeroSection() {
                                                                     children: "Ho Chi Minh City, Vietnam • Aug. 2015 – Aug. 2019"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 911,
+                                                                    lineNumber: 899,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3418,7 +3408,7 @@ function HeroSection() {
                                                                             children: "Coursework:"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 913,
+                                                                            lineNumber: 901,
                                                                             columnNumber: 11
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3435,14 +3425,14 @@ function HeroSection() {
                                                                                                         className: "w-1.5 h-1.5 bg-blue-500 rounded-full"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 918,
+                                                                                                        lineNumber: 906,
                                                                                                         columnNumber: 15
                                                                                                     }, this),
                                                                                                     "Object-Oriented Programming (OOP)"
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 917,
+                                                                                                lineNumber: 905,
                                                                                                 columnNumber: 14
                                                                                             }, this),
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3452,14 +3442,14 @@ function HeroSection() {
                                                                                                         className: "w-1.5 h-1.5 bg-purple-500 rounded-full"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 922,
+                                                                                                        lineNumber: 910,
                                                                                                         columnNumber: 15
                                                                                                     }, this),
                                                                                                     "Java Programming & Database Systems"
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 921,
+                                                                                                lineNumber: 909,
                                                                                                 columnNumber: 14
                                                                                             }, this),
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3469,25 +3459,25 @@ function HeroSection() {
                                                                                                         className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 926,
+                                                                                                        lineNumber: 914,
                                                                                                         columnNumber: 15
                                                                                                     }, this),
                                                                                                     "Data Structures and Algorithms"
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 925,
+                                                                                                lineNumber: 913,
                                                                                                 columnNumber: 14
                                                                                             }, this)
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 916,
+                                                                                        lineNumber: 904,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 915,
+                                                                                    lineNumber: 903,
                                                                                     columnNumber: 12
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3501,14 +3491,14 @@ function HeroSection() {
                                                                                                         className: "w-1.5 h-1.5 bg-blue-500 rounded-full"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 934,
+                                                                                                        lineNumber: 922,
                                                                                                         columnNumber: 15
                                                                                                     }, this),
                                                                                                     "Web Development"
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 933,
+                                                                                                lineNumber: 921,
                                                                                                 columnNumber: 14
                                                                                             }, this),
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3518,14 +3508,14 @@ function HeroSection() {
                                                                                                         className: "w-1.5 h-1.5 bg-purple-500 rounded-full"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 938,
+                                                                                                        lineNumber: 926,
                                                                                                         columnNumber: 15
                                                                                                     }, this),
                                                                                                     "C#/ ASP.NET"
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 937,
+                                                                                                lineNumber: 925,
                                                                                                 columnNumber: 14
                                                                                             }, this),
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3535,66 +3525,66 @@ function HeroSection() {
                                                                                                         className: "w-1.5 h-1.5 bg-teal-500 rounded-full"
                                                                                                     }, void 0, false, {
                                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                        lineNumber: 942,
+                                                                                                        lineNumber: 930,
                                                                                                         columnNumber: 15
                                                                                                     }, this),
                                                                                                     "Database with RDBMS"
                                                                                                 ]
                                                                                             }, void 0, true, {
                                                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                                lineNumber: 941,
+                                                                                                lineNumber: 929,
                                                                                                 columnNumber: 14
                                                                                             }, this)
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                        lineNumber: 932,
+                                                                                        lineNumber: 920,
                                                                                         columnNumber: 13
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                                    lineNumber: 931,
+                                                                                    lineNumber: 919,
                                                                                     columnNumber: 12
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                                            lineNumber: 914,
+                                                                            lineNumber: 902,
                                                                             columnNumber: 11
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 912,
+                                                                    lineNumber: 900,
                                                                     columnNumber: 10
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 908,
+                                                            lineNumber: 896,
                                                             columnNumber: 9
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 900,
+                                                    lineNumber: 888,
                                                     columnNumber: 8
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                lineNumber: 894,
+                                                lineNumber: 882,
                                                 columnNumber: 7
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 822,
+                                        lineNumber: 810,
                                         columnNumber: 6
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                lineNumber: 811,
+                                lineNumber: 799,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3617,7 +3607,7 @@ function HeroSection() {
                                         children: "Publications"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 963,
+                                        lineNumber: 951,
                                         columnNumber: 6
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3651,22 +3641,22 @@ function HeroSection() {
                                                                 className: "w-full h-full object-cover object-center"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 983,
+                                                                lineNumber: 971,
                                                                 columnNumber: 11
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 982,
+                                                            lineNumber: 970,
                                                             columnNumber: 10
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 976,
+                                                        lineNumber: 964,
                                                         columnNumber: 9
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 975,
+                                                    lineNumber: 963,
                                                     columnNumber: 8
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3682,12 +3672,12 @@ function HeroSection() {
                                                                 children: "Winning the Battle for Secure ML"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                                                lineNumber: 1000,
+                                                                lineNumber: 988,
                                                                 columnNumber: 10
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 994,
+                                                            lineNumber: 982,
                                                             columnNumber: 9
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3695,7 +3685,7 @@ function HeroSection() {
                                                             children: "Open-Access Textbook on Machine Learning Security"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 1002,
+                                                            lineNumber: 990,
                                                             columnNumber: 9
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3706,7 +3696,7 @@ function HeroSection() {
                                                             children: "Read more"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 1003,
+                                                            lineNumber: 991,
                                                             columnNumber: 9
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3717,7 +3707,7 @@ function HeroSection() {
                                                                     children: "Contributions:"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 1013,
+                                                                    lineNumber: 1001,
                                                                     columnNumber: 10
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3725,48 +3715,48 @@ function HeroSection() {
                                                                     children: "Helped create an open-access guide that makes machine learning more secure and trustworthy. The work covered common risks (such as hackers tricking models or data leaks) and shared practical ways to protect against them. I focused on turning complex technical topics into clear insights that students, researchers, and professionals can apply."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                                    lineNumber: 1014,
+                                                                    lineNumber: 1002,
                                                                     columnNumber: 10
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                                            lineNumber: 1012,
+                                                            lineNumber: 1000,
                                                             columnNumber: 9
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 993,
+                                                    lineNumber: 981,
                                                     columnNumber: 8
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/components/HeroSection.tsx",
-                                            lineNumber: 973,
+                                            lineNumber: 961,
                                             columnNumber: 7
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 967,
+                                        lineNumber: 955,
                                         columnNumber: 6
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                lineNumber: 956,
+                                lineNumber: 944,
                                 columnNumber: 5
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 142,
+                        lineNumber: 130,
                         columnNumber: 4
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/HeroSection.tsx",
-                lineNumber: 97,
+                lineNumber: 85,
                 columnNumber: 3
             }, this)
         ]
