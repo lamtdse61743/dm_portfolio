@@ -79,42 +79,38 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$g
 ;
 ;
 const metadata = {
-    title: '</> Lam Dinh Trinh - Full-Stack Developer </>',
-    description: 'Hi!',
+    title: '</> Lam Dinh Trinh - Marketing Specialist & AI Engineer </>',
+    description: "Hi! I'm a Marketing Specialist & AI Engineer. I bridge the gap between IT innovation and business operations, applying AI-driven strategies to marketing campaigns, customer engagement, and data analytics.",
     keywords: [
-        'Full-Stack Developer',
-        'Software Engineer',
-        'Frontend Development',
-        'Backend Development',
-        'React',
-        'Next.js',
-        'Node.js',
-        'TypeScript',
-        'Database Design',
-        'API Development',
-        'Cloud Solutions',
-        'DevOps',
-        'System Architecture',
-        'Web Development',
-        '[Your Name]'
+        'Marketing Specialist',
+        'AI Engineer',
+        'Digital Marketing',
+        'Artificial Intelligence',
+        'Machine Learning',
+        'Data Analytics',
+        'Business Automation',
+        'Customer Engagement',
+        'Growth Marketing',
+        'Brand Strategy',
+        'Lam Dinh Trinh'
     ],
     authors: [
         {
-            name: '[Your Name]'
+            name: 'Lam Dinh Trinh'
         }
     ],
-    creator: '[Your Name]',
+    creator: 'Lam Dinh Trinh',
     openGraph: {
-        title: '[Your Name] - Full-Stack Developer Portfolio',
-        description: 'Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
+        title: 'Lam Dinh Trinh - Marketing Specialist & AI Engineer Portfolio',
+        description: "Explore my portfolio as a Marketing Specialist & AI Engineer. I create data-driven marketing solutions and intelligent automation for business growth.",
         url: 'https://your-domain.com',
-        siteName: '[Your Name] - Portfolio',
+        siteName: 'Lam Dinh Trinh - Portfolio',
         images: [
             {
                 url: '/og-image.jpg',
                 width: 1200,
                 height: 630,
-                alt: '[Your Name] - Full-Stack Developer Portfolio'
+                alt: 'Lam Dinh Trinh - Marketing Specialist & AI Engineer Portfolio'
             }
         ],
         locale: 'en_US',
@@ -122,8 +118,8 @@ const metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: '[Your Name] - Full-Stack Developer',
-        description: 'Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
+        title: 'Lam Dinh Trinh - Marketing Specialist & AI Engineer',
+        description: "Explore my portfolio as a Marketing Specialist & AI Engineer. I create data-driven marketing solutions and intelligent automation for business growth.",
         creator: '@yourusername',
         images: [
             '/og-image.jpg'
@@ -149,12 +145,12 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 83,
+            lineNumber: 79,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 82,
+        lineNumber: 78,
         columnNumber: 3
     }, this);
 }
