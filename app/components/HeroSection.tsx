@@ -773,10 +773,10 @@ export default function HeroSection() {
 										<div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
 											{/* Left: 4 luxury images */}
 											<div className="grid grid-cols-2 gap-4">
-												<img src={getImagePath('/luxury1.jpg')} alt="Luxury Hublot 1" className="rounded-lg border-2 border-yellow-400 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury1.jpg'))} />
-												<img src={getImagePath('/luxury2.jpg')} alt="Luxury Hublot 2" className="rounded-lg border-2 border-yellow-400 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury2.jpg'))} />
-												<img src={getImagePath('/luxury3.jpg')} alt="Luxury Hublot 3" className="rounded-lg border-2 border-yellow-400 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury3.jpg'))} />
-												<img src={getImagePath('/luxury4.jpg')} alt="Luxury Hublot 4" className="rounded-lg border-2 border-yellow-400 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury4.jpg'))} />
+												<img src={getImagePath('/luxury1.JPG')} alt="Luxury Hublot 1" className="rounded-lg border-2 border-yellow-400 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury1.JPG'))} />
+												<img src={getImagePath('/luxury2.JPG')} alt="Luxury Hublot 2" className="rounded-lg border-2 border-yellow-400 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury2.JPG'))} />
+												<img src={getImagePath('/luxury3.JPG')} alt="Luxury Hublot 3" className="rounded-lg border-2 border-yellow-400 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury3.JPG'))} />
+												<img src={getImagePath('/luxury4.JPG')} alt="Luxury Hublot 4" className="rounded-lg border-2 border-yellow-400 object-cover w-full h-32 md:h-40 bg-black cursor-zoom-in" onClick={() => setZoomedImage(getImagePath('/luxury4.JPG'))} />
 											</div>
 											{/* Right: Value highlight */}
 											<div className="flex flex-col items-center justify-center gap-4">
