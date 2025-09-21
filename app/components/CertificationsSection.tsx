@@ -3,20 +3,8 @@
 import { motion } from 'framer-motion';
 
 export default function CertificationsSection() {
-	// Helper function to get the correct image path for GitHub Pages
-	const getImagePath = (imagePath: string) => {
-		// For GitHub Pages deployment, we need to add the repository name as basePath
-		// We can detect if we're in production by checking the current location
-		if (typeof window !== 'undefined') {
-			// Client-side: check if we're on GitHub Pages
-			const isGitHubPages = window.location.hostname === 'lamtdse61743.github.io';
-			return isGitHubPages ? `/Portfolio${imagePath}` : imagePath;
-		} else {
-			// Server-side: check if we're in production (GitHub Pages) or development
-			const isProduction = process.env.NODE_ENV === 'production';
-			return isProduction ? `/Portfolio${imagePath}` : imagePath;
-		}
-	};
+	// Helper function for image paths (Vercel: use as-is)
+	const getImagePath = (imagePath: string) => imagePath;
 
 	return (
 		<section className="py-20 px-4">
