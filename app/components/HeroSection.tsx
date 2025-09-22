@@ -1,6 +1,7 @@
 'use client';
 
-
+import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 export default function HeroSection() {
 	const [selectedStack, setSelectedStack] = useState<'frontend' | 'backend' | 'devops' | null>(null);
